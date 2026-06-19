@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>OpenHABBackend</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- NuGet package – published from csharp-openhab-rest-client -->
+    <PackageReference Include="CSharpOpenHABRestClient" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>
