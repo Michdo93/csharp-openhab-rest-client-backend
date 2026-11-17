@@ -2,13 +2,13 @@
 
 HTTP backend for the [csharp-openhab-rest-client test app](https://github.com/Michdo93/csharp-openhab-rest-client-test-app):
 a browser cannot run .NET, so this small ASP.NET Core server calls
-[csharp-openhab-rest-client](https://github.com/Michdo93/csharp-openhab-rest-client) 2.0.0 on its behalf.
+[csharp-openhab-rest-client](https://github.com/Michdo93/csharp-openhab-rest-client) 2.0.1 on its behalf.
 Every method of the library is reachable – 153 REST methods and 25 event streams, found by
 reflection, so a new version of the library needs no change here.
 
 | Endpoint | Body / query | Answer |
 |---|---|---|
-| `GET /` | – | `{"status":"ok","library":"csharp-openhab-rest-client","version":"2.0.0"}` |
+| `GET /` | – | `{"status":"ok","library":"csharp-openhab-rest-client","version":"2.0.1"}` |
 | `GET /api/methods` | – | all methods with parameters (name, type, required, default) |
 | `POST /api/connect` | `{url, token}` or `{url, username, password}` | `{loggedIn, isCloud, url}` |
 | `POST /api/call` | `{url, token, class, method, args: {...}}` | result of the library method |
